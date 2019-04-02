@@ -461,6 +461,7 @@ input, textarea {
 
 /*Format mobile*/
 @media screen and (max-width: 449px) {
+	
 	header {
 		flex-direction: column;
    	 	justify-content: space-between;
@@ -598,6 +599,20 @@ input, textarea {
 		margin-left: 0;
 	}
 
+	input, textarea {
+		padding: 8px 7px;
+		margin-left: 2px;
+    	margin-top: 1px;
+    }
+
+    textarea {
+    	margin-top: 4px;
+    }
+
+    #form_list {
+    	margin-top: 7px;
+    }
+
 	#grey {
 		height: 522px;
 		width: 100%;
@@ -607,7 +622,9 @@ input, textarea {
 		bottom: 1006px;	
 	}
 
-	
+	#down_arrow_allworks {
+		left: 26px;
+	}
 
 }
 
@@ -706,7 +723,7 @@ input, textarea {
 	}
 
 	#form {
-		left: 40px;
+		left: -212px;
 		bottom: 543px;
 	}
 }
@@ -719,8 +736,18 @@ input, textarea {
 	}
 
 	#form {
-		left: 0;
+		left: -17px;
 	}
+
+	input, textarea {
+		padding: 5px;
+		margin-top: 3px;
+	}
+
+	textarea {
+		margin-top: 1px;
+	}
+
 }
 
 /*format grande tablette */
@@ -800,7 +827,17 @@ input, textarea {
  	}
 
 	#form {
-		left: 10px;
+		left: 8px;
 	}
+
+	input, textarea {
+		padding: 5px;
+		margin-top: 3px;
+	}
+
+	textarea {
+		margin-top: 1px;
+	}
+
 }
 
