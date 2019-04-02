@@ -213,7 +213,7 @@ h4 {
 }
 
 .portfolio {
-	margin: 30px;
+	margin: 10px;
 }
 
 #left_arrow {
@@ -229,9 +229,7 @@ h4 {
 }
 
 #portfolio_list {
-	
-	display: inline-block;
-	
+	display: inline-block;	
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -243,32 +241,65 @@ h4 {
 
 #portfolio_list li {
 	padding: 18px;
+	position: relative;
 }
 
-/*#down_arrow p {
+#down_arrow_allworks  {
 	margin: 0;
 	font-size: 2em;
 	color: #5a43e0;
-	position: relative;
-	left: 581px;
-	bottom: 25px;
+	position: absolute;
+	left: 37px;
+	bottom: -29px;
+	width: 30px;
+	display: inline-block;
 }
 
-.down_arrow p {
+#down_arrow_creative  {
 	margin: 0;
 	font-size: 2em;
 	color: #5a43e0;
-	position: relative;
-	left: 506px;
-	bottom: 25px;
+	position: absolute;
+	left: 31px;
+	bottom: -28px;	
+	width: 30px;
+	margin: 0;
 	visibility: hidden;
 }
 
-.portfolio_nav a[title="Creative"]:hover .down_arrow p {
+#portfolio_list li:hover #down_arrow_creative {
 	visibility: visible;
 }
 
-*/
+#down_arrow_corporate  {
+	margin: 0;
+	font-size: 2em;
+	color: #5a43e0;
+	position: absolute;
+	left: 39px;
+	bottom: -28px;
+	width: 30px;
+	visibility: hidden;
+}
+
+#portfolio_list li:hover #down_arrow_corporate {
+	visibility: visible;
+}
+
+#down_arrow_portfolio  {
+	margin: 0;
+	font-size: 2em;
+	color: #5a43e0;
+	position: absolute;
+	left: 33px;
+	bottom: -28px;
+	width: 30px;
+	visibility: hidden;
+}
+
+#portfolio_list li:hover #down_arrow_portfolio {
+	visibility: visible;
+}
 
 #all_works {		
 	background: #278de6; 
@@ -326,6 +357,11 @@ h4 {
 
 /*Maquette 4*/
 
+#map {
+	height: 602px;
+	position: relative;
+}
+
 .mapouter {
 	text-align:right;
 	height: 570px;
@@ -341,6 +377,16 @@ h4 {
 	border: none;
 }
 
+#filter {
+	background-color: #278de6;
+	opacity: 0.2;
+	width: 100%;
+	height: 570px;
+	position: absolute;
+	bottom: 31px;
+	z-index: 2;
+}
+
 #form {
 	border: none;
 	display: inline-block;
@@ -350,9 +396,9 @@ h4 {
 	z-index: 3;
 	height: 425px;
 	width: 280px;	
-	position: relative;
-	bottom: 1050px;
-	left: 840px;
+	position: absolute;
+	bottom: 98px;
+	margin-left: 60%;
 }
 
 
@@ -412,18 +458,6 @@ textarea {
 input, textarea {
 	padding: 5px;
 }
-
-#filter {
-	background-color: #278de6;
-	opacity: 0.2;
-	width: 100%;
-	height: 570px;
-	position: relative;
-	bottom: 570px;
-	z-index: 2;
-}
-
-
 
 /*Format mobile*/
 @media screen and (max-width: 449px) {
@@ -559,10 +593,21 @@ input, textarea {
  	}
 
 	#form {
-		left: 0;
-		bottom: 490px;
-		background-color: #d4d4d4;
+		bottom: 539px;
+		background-color: #ffffff;
+		margin-left: 0;
 	}
+
+	#grey {
+		height: 522px;
+		width: 100%;
+		z-index: 2;
+		background-color: #d4d4d4;
+		position: relative;
+		bottom: 1006px;	
+	}
+
+	
 
 }
 
@@ -666,8 +711,20 @@ input, textarea {
 	}
 }
 
+/*format moyenne tablette */
+
+@media screen and (min-width: 700px) and (max-width: 839px){
+	.portfolio {
+		margin: 5px;
+	}
+
+	#form {
+		left: 0;
+	}
+}
+
 /*format grande tablette */
-@media screen and (min-width: 700px) and (max-width: 1024px) {
+@media screen and (min-width: 840px) and (max-width: 1279px) {
 	
 
 	header nav ul {
@@ -719,7 +776,7 @@ input, textarea {
  	}
 	
  	.portfolio {
- 		margin: 0px;
+ 		margin: 20px;
  	}
 
  	.portfolio .liseret {
@@ -746,3 +803,4 @@ input, textarea {
 		left: 10px;
 	}
 }
+
