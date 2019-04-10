@@ -71,28 +71,13 @@ header a:hover {
    display: flex;
    flex-direction: row;
 }
-	
-#button_effect {
-	border: none;
-	background-color: #278de6;
-	padding: 15px 20px;
-	border-radius: 2px; 
-	box-shadow: 3px 3px 3px #000099;
-}	  
- 
-.button {
- 	margin-top: 50px;
- }
 
-#button_effect:hover {
-	border: none;
-	background-color: #9999ff;
-	border-radius: 2px; 
-	box-shadow: 1px 1px 2px #000099;
+#left_arrow {
+	margin-top: 300px;
+
 }
-
-#button_effect a {
-	color: #ffffff;
+ #right_arrow {
+ 	margin-top: 300px;
 }
 
 #presentation {
@@ -113,16 +98,55 @@ header a:hover {
 h1 {
 	max-width: 550px;
 }
+	
+.button {
+ 	margin-top: 50px;
+ }
 
-h2 {
-	font-weight: 700;
-	font-size: 3em;
+#button_effect {
+	border: none;
+	background-color: #278de6;
+	padding: 15px 20px;
+	border-radius: 2px; 
+	box-shadow: 3px 3px 3px #000099;
+}	  
+ 
+#button_effect:hover {
+	border: none;
+	background-color: #9999ff;
+	border-radius: 2px; 
+	box-shadow: 1px 1px 2px #000099;
 }
+
+#button_effect a {
+	color: #ffffff;
+}
+
 
 /*Maquette 2*/
 
+
 #services {
 	margin-bottom:100px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+}
+
+.circle {	
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: #278de6;
+	margin: auto;
+}
+
+.development {
+	text-align: center;
+	font-weight: 300;
 }
 
 #services_elements {
@@ -142,28 +166,6 @@ h2 {
 	flex-direction: row;
 }
 
-.list_paragraph {
-	width: 75%;
-}
-
-.list_paragraph p {
-	font-weight: 400;
-}
-
-.list_paragraph h3 {
-	font-weight: 600;
-}
-
-.circle_list {
-	border-radius: 50%;
-	width: 18px;
-	height: 18px;
-	background: #278de6;	
-	position: relative;
-	top: 27px;
-	right: 10px;
-}
-
 .icon {
 	width: 80px;
 	height: 80px;
@@ -176,9 +178,22 @@ h2 {
 	color: #278de6;
 }
 
-h2 {
-	text-align: center;
-	font-size: 2em;
+.circle_list {
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	background: #278de6;	
+	position: relative;
+	top: 27px;
+	right: 10px;
+}
+
+.list_paragraph {
+	width: 75%;
+}
+
+.list_paragraph p {
+	font-weight: 400;
 }
 
 h3 {
@@ -186,55 +201,9 @@ h3 {
 	font-size: 1.5em;
 }
 
-h4 {
-	font-size: 1.2em;
-}
-
-.development {
-	text-align: center;
-	font-weight: 300;
-}
-
-#projects ul {
-	text-align: center;
-}
 
 /*Maquette 3*/
 
-#projects li {
-	list-style: none;
-	display: inline;     
-	font-weight: 300;
-}
-
-.circle {	
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	background: #278de6;
-	margin: auto;
-}
-
-#portfolio {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding-right: 0px;
-
-}
-
-.portfolio {
-	margin: 10px;
-}
-
-#left_arrow {
-	margin-top: 300px;
-
-}
- #right_arrow {
- 	margin-top: 300px;
-}
 
 #portfolio_nav {
 	text-align: center;	
@@ -248,12 +217,28 @@ h4 {
 	padding: 17px 0px; 
  	border-radius: 6px;
  	background: #ccccb3; 
+}
 
+#projects nav li:hover {
+	background: #278de6;
+	padding: 17px;
+	border-radius: 6px;
+	box-shadow: 0 5px 2px #5a43e0;	
 }
 
 #portfolio_list li {
 	padding: 18px;
 	position: relative;
+	list-style: none;
+	display: inline;     
+	font-weight: 300;
+}
+
+#all_works {		
+	background: #278de6; 
+	border-top-left-radius: 6px; 
+	border-bottom-left-radius: 6px;
+	box-shadow: 0 4px 2px #5a43e0;
 }
 
 #down_arrow_allworks  {
@@ -279,10 +264,6 @@ h4 {
 	visibility: hidden;
 }
 
-#portfolio_list li:hover #down_arrow_creative {
-	visibility: visible;
-}
-
 #down_arrow_corporate  {
 	margin: 0;
 	font-size: 2em;
@@ -292,10 +273,6 @@ h4 {
 	bottom: -28px;
 	width: 30px;
 	visibility: hidden;
-}
-
-#portfolio_list li:hover #down_arrow_corporate {
-	visibility: visible;
 }
 
 #down_arrow_portfolio  {
@@ -309,22 +286,29 @@ h4 {
 	visibility: hidden;
 }
 
+#portfolio_list li:hover #down_arrow_creative {
+	visibility: visible;
+}
+
+#portfolio_list li:hover #down_arrow_corporate {
+	visibility: visible;
+}
+
 #portfolio_list li:hover #down_arrow_portfolio {
 	visibility: visible;
 }
 
-#all_works {		
-	background: #278de6; 
-	border-top-left-radius: 6px; 
-	border-bottom-left-radius: 6px;
-	box-shadow: 0 4px 2px #5a43e0;
+
+#portfolio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-right: 0px;
 }
 
- #projects nav li:hover {
-	background: #278de6;
-	padding: 17px;
-	border-radius: 6px;
-	box-shadow: 0 5px 2px #5a43e0;	
+.portfolio {
+	margin: 10px;
 }
 
 .liseret {
@@ -335,10 +319,6 @@ h4 {
 	width: 300px;
 	height: 76px;
 	visibility: hidden;
-}
-
-.portfolio img:hover + .liseret {
-	visibility: visible;
 }
 
 .eye_icon {
@@ -358,6 +338,10 @@ h4 {
 	left: 250px;
 }
 
+h4 {
+	font-size: 1.2em;
+}
+
 .portfolio p, h4 {
 	position: relative;
 	z-index: 4;
@@ -365,6 +349,10 @@ h4 {
 	left: 20px;
 	color: #ffffff;
 	font-size: 1.1em;
+}
+
+.portfolio img:hover + .liseret {
+	visibility: visible;
 }
 
 /*Maquette 4*/
@@ -413,7 +401,6 @@ h4 {
 	margin-left: 60%;
 }
 
-
 #form_list {
 	display: flex;
 	flex-direction: column;
@@ -440,8 +427,6 @@ textarea {
 #WAbold {
 	font-weight: bold;
 }
-
-
 
 #paragraph_form {
 	text-align: left;
