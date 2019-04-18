@@ -355,7 +355,7 @@ h4 {
 	font-size: 1.1em;
 }
 
-.portfolio img:hover + .liseret {
+.portfolio:hover .liseret {
 	visibility: visible;
 }
 
