@@ -126,6 +126,16 @@ h2 {
 	text-align: center;
 }
 
+.circle_liseret {
+	width: 150px;
+	height: 2px;
+	opacity: 0.1;
+	position:relative;
+	top: 13px;
+	margin: auto;
+	background: #278de6;
+}
+
 .circle {	
 	border-radius: 50%;
 	width: 25px;
